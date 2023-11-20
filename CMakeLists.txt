@@ -12,7 +12,8 @@ endif()
 project ("Task2")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Task2 "Task2.cpp" "Task2.h")
+
+add_subdirectory(src)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Task2 PROPERTY CXX_STANDARD 20)
